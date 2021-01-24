@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-05T08:01:44.091Z",
+    "end": "2020-12-05T08:01:46.550Z",
+    "duration": 2459,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b03b818d-5cd0-4856-90f7-4ca724c5f022",
+      "title": "",
+      "fullFile": "cypress\\integration\\Demo.js",
+      "file": "cypress\\integration\\Demo.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "15928a6d-34e7-4140-b9b4-8c9b884b8930",
+          "title": "MicroServices",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Click Info",
+              "fullTitle": "MicroServices Click Info",
+              "timedOut": null,
+              "duration": 2165,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: this.data.url,\n  headers: {\n    'Authorization': 'Basic YWRtaW46TGljaHRlbmF1Nzc4Mzk='\n  }\n}).then(function (resp) {\n  expect(resp.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "ea07a3b5-35ed-4d69-8ca6-70c1fe22885c",
+              "parentUUID": "15928a6d-34e7-4140-b9b4-8c9b884b8930",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ea07a3b5-35ed-4d69-8ca6-70c1fe22885c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2165,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reporterDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

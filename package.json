@@ -1,0 +1,23 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run --config pageLoadTimeout=100000",
+    "testrun": "npm run test"
+  },
+  "author": "Pranesh",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.0.1",
+    "cypress-file-upload": "^5.0.1",
+    "mochawesome": "^6.2.1"
+  },
+  "dependencies": {
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha": "^8.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}
