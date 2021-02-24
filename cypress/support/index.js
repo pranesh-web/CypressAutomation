@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+require('cypress-plugin-tab')
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
     // failing the test
@@ -25,4 +26,4 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-
+//import '../integration/MYSPX_272/utils/login.js'

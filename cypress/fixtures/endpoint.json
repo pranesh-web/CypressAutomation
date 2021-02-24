@@ -1,4 +1,4 @@
 {
-    "url": "https://test.myspectra.app/spplus-workflow-service/workflowintegration/getworkflowinstances?RefID=2046&ActivityType=incident"
+    "url": "https://dev.myspectra.app/myspectra-databrowser-spectra/api/query/scenarioColumns?page=1&size=5"
     
   }

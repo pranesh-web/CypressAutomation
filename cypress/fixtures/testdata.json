@@ -1,11 +1,11 @@
 {
-    "registration": "FFFF",
-    "aircraft": "FFFF",
-    "model": "FFFF",
-    "licenceInfo":"S",
-    "licenceContact":"S",
-    "paymentcontact":"S",
-    "licenceInfodev":"prku",
-    "licenceContactdev":"prku",
-    "paymentcontactdev":"prku"
-  }
+  "registration": "FFFF",
+  "aircraft": "FFFF",
+  "model": "FFFF",
+  "licenceInfo": "S",
+  "licenceContact": "S",
+  "paymentcontact": "S",
+  "licenceInfodev": "prku",
+  "licenceContactdev": "prku",
+  "paymentcontactdev": "prku"
+}

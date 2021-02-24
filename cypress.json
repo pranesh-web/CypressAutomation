@@ -1,13 +1,14 @@
 {
-  "chromeWebSecurity": false,
+    "chromeWebSecurity": false,
     "video":true,
     "ScreenshotsFolder":"cypress/videos",
    "viewportWidth": 1300,
    "viewportHeight": 660,
-    "baseUrl":"https://test.myspectra.app",
+   "reporter": "mochawesome",
+    "baseUrl":"https://dev.myspectra.app",
  "env":{
     "officeUrl":"/office",
-    "portalUrl":"/portal"
+    "portal":"/portal"
     }
       }
  

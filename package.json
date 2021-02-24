@@ -12,6 +12,7 @@
   "devDependencies": {
     "cypress": "^6.0.1",
     "cypress-file-upload": "^5.0.1",
+    "cypress-plugin-tab": "^1.0.5",
     "mochawesome": "^6.2.1"
   },
   "dependencies": {

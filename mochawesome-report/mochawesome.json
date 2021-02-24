@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2020-12-05T09:56:01.595Z",
-    "end": "2020-12-05T09:56:03.340Z",
-    "duration": 1745,
+    "failures": 1,
+    "start": "2021-02-17T09:39:42.460Z",
+    "end": "2021-02-17T09:39:43.127Z",
+    "duration": 667,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,49 +18,53 @@
   },
   "results": [
     {
-      "uuid": "8633517e-f6c1-4622-8dd1-ac7980652df1",
+      "uuid": "3f583b51-89c5-4020-8ff4-c15972600c4a",
       "title": "",
-      "fullFile": "cypress\\integration\\Demo.js",
-      "file": "cypress\\integration\\Demo.js",
+      "fullFile": "cypress\\integration\\View_Documents\\List_Documents.js",
+      "file": "cypress\\integration\\View_Documents\\List_Documents.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "a8c9d6c4-b50f-41f0-80ca-e83a41111e82",
-          "title": "MicroServices",
+          "uuid": "917d8e3a-1aec-4a19-ab5f-b4d40e7fe947",
+          "title": "Portal_1041",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Click Info",
-              "fullTitle": "MicroServices Click Info",
+              "title": "Acceptance Creteria for upload documents",
+              "fullTitle": "Portal_1041 Acceptance Creteria for upload documents",
               "timedOut": null,
-              "duration": 1686,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 523,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
-              "code": "cy.request({\n  method: 'GET',\n  url: this.data.url,\n  headers: {\n    'Authorization': 'Basic YWRtaW46TGljaHRlbmF1Nzc4Mzk='\n  }\n}).then(function (resp) {\n  expect(resp.status).to.eq(200);\n});",
-              "err": {},
-              "uuid": "f959e8c7-0f70-40e5-9146-6f51b16f8c5a",
-              "parentUUID": "a8c9d6c4-b50f-41f0-80ca-e83a41111e82",
+              "code": "cy.visit(Cypress.env('portalUrl'));\ncy.wait(5000);\ncy.get('#userIconId').click();\ncy.get(':nth-child(5) > .dropdown-menu > li > .dropdown-item').click();\ncy.wait(5000);\ncy.get('input[class=\"form-control\"][tabindex=\"1\"]').type('oomishade@ofcom.org.uk.lpe2');\ncy.get('input[class=\"form-control\"][tabindex=\"2\"]').type('Password.123');\ncy.get('.btn.btn-default').click(); //cy.get('[href=\"/portal/product/index\"] > span').click()\n//cy.get('.dropdown:nth-child(3) > .nav-link').click();\ncy.wait(5000); //cy.get('.dropdown:nth-child(3) > .nav-link').click();\ncy.get('nav > ul > li:nth-child(2) > a > span').click();\ncy.get(':nth-child(2) > ul > :nth-child(1) > a > span').click();\ncy.get('a > div > :nth-child(1)').click();\ncy.get('.bubble > ul > li > a > span').click();\ncy.get(':nth-child(3) > .button > span').click();",
+              "err": {
+                "message": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit",
+                "estack": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit\n    at Context.visit (https://dev.myspectra.app/__cypress/runner/cypress_runner.js:157447:19)\nFrom Your Spec Code:\n    at Context.eval (https://dev.myspectra.app/__cypress/tests?p=cypress\\integration\\View_Documents\\List_Documents.js:106:8)",
+                "diff": null
+              },
+              "uuid": "f6907f24-22c7-4c88-9467-ebf2ef9ccbc8",
+              "parentUUID": "917d8e3a-1aec-4a19-ab5f-b4d40e7fe947",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "f959e8c7-0f70-40e5-9146-6f51b16f8c5a"
+          "passes": [],
+          "failures": [
+            "f6907f24-22c7-4c88-9467-ebf2ef9ccbc8"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1686,
+          "duration": 523,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -93,15 +97,7 @@
       "version": "6.2.1"
     },
     "marge": {
-      "options": {
-        "reporterOptions": {
-          "reporterDir": "cypress/report/mochawesome-report",
-          "overwrite": false,
-          "html": true,
-          "json": true,
-          "timestamp": "mmddyyyy_HHMMss"
-        }
-      },
+      "options": null,
       "version": "5.1.0"
     }
   }
